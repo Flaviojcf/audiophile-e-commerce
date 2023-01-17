@@ -3,7 +3,7 @@ import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 
 export function Header() {
   return (
-    <header className="bg-black50 justify-between items-center h-24 px-40 py-8  tablet:px-10 mobile:px-6  font-manrope ">
+    <header className="bg-black50 justify-between items-center h-24 px-40 py-8  tablet:px-10 mobile:px-6  font-manrope tablet:bg-black">
       <div className="flex justify-between items-center h-full py-4 pb-8 border-b-2 border-opacity-30  border-white  ">
         <DropdownMenu.Root>
           <DropdownMenu.Trigger className="hidden tablet:flex">

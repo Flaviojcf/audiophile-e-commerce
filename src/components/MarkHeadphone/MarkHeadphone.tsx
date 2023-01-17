@@ -1,6 +1,6 @@
 export function MarkHeadphone() {
   return (
-    <div className="w-full bg-black50 font-manrope px-10 pb-10 tablet:px-4  tablet:gap-0">
+    <div className="w-full bg-black50 font-manrope px-10 pb-10 tablet:px-4  tablet:gap-0  tablet:bg-black">
 
       <div className="flex gap-16 items-center justify-center text-white  tablet:text-center tablet:gap-0">
         

@@ -1,10 +1,12 @@
 import { Header } from "./components/header/Header";
+import { MarkHeadphone } from "./components/MarkHeadphone/MarkHeadphone";
 import "./styles/global.css";
 
 export function App() {
   return (
     <div>
       <Header />
+      <MarkHeadphone/>
     </div>
   );
 }

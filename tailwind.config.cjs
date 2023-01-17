@@ -10,6 +10,7 @@ module.exports = {
       black100: "#101010",
       black200: "#191919",
       black: "#000000",
+      black50: "#131313",
 
       gray300: "#4C4C4C",
       gray200: "#F1F1F1",
@@ -23,21 +24,25 @@ module.exports = {
       red: "#CD2C2C",
     },
     screens: {
-      'desktop': {'max': '1440px'},
+      desktop: { max: "1440px" },
       // => @media (max-width: 1279px) { ... }
 
-      'tablet': {'max': '1024px'},
+      tablet: { max: "1024px" },
       // => @media (max-width: 1023px) { ... }
 
-      'md': {'max': '768px'},
+      md: { max: "768px" },
       // => @media (max-width: 767px) { ... }
 
-      'mobile': {'max': '375px'},
+      mobile: { max: "375px" },
       // => @media (max-width: 639px) { ... }
     },
     fontFamily: {
-      manrope: "manrope"
-    }
+      manrope: "manrope",
+    },
+    letterSpacing: {
+      thin: "2px",
+      medium: "10px",
+    },
   },
   plugins: [],
 };

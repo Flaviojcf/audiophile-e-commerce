@@ -22,6 +22,22 @@ module.exports = {
 
       red: "#CD2C2C",
     },
+    screens: {
+      'desktop': {'max': '1440px'},
+      // => @media (max-width: 1279px) { ... }
+
+      'tablet': {'max': '1024px'},
+      // => @media (max-width: 1023px) { ... }
+
+      'md': {'max': '768px'},
+      // => @media (max-width: 767px) { ... }
+
+      'mobile': {'max': '375px'},
+      // => @media (max-width: 639px) { ... }
+    },
+    fontFamily: {
+      manrope: "manrope"
+    }
   },
   plugins: [],
 };

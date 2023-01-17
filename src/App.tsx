@@ -1,7 +1,10 @@
-import "./styles/global.css"
+import { Header } from "./components/header/Header";
+import "./styles/global.css";
 
-export function App(){
-  return(
-    <div className="text-orange300"> oi</div>
-  )
+export function App() {
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }

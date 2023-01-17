@@ -1,5 +1,7 @@
 import { Header } from "./components/header/Header";
-import { MarkHeadphone } from "./components/MarkHeadphone/MarkHeadphone";
+import { Main } from "./components/main/Main";
+import { MarkHeadphone } from "./components/markHeadphone/MarkHeadphone";
+
 import "./styles/global.css";
 
 export function App() {
@@ -7,6 +9,7 @@ export function App() {
     <div>
       <Header />
       <MarkHeadphone/>
+      <Main/>
     </div>
   );
 }

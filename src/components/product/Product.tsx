@@ -5,12 +5,12 @@ interface ProductProps {
 
 export function Product({ image, name }: ProductProps) {
   return (
-    <div className="flex flex-col bg-white50 w-[21rem] h-48 items-center tablet:w-56 tablet:h-42 tablet:mt-12 mt-12">
+    <div className="flex flex-col bg-white50 w-[21rem] h-48 items-center tablet:w-56 tablet:h-42 tablet:mt-12 mt-12 mobile:w-72">
       <img
         src={image}
         className={
           image === "/earphonesProduct.png"
-            ? "w-40 h-36 -mt-14 mb-6 tablet:w-36 tablet:h-32 tablet:-mt-10 tablet:mb-2 "
+            ? "w-40 h-44 -mt-20 mb-6 tablet:w-36 tablet:h-32 tablet:-mt-10 tablet:mb-2 object-contain"
             : "w-44 h-44 -mt-20 mb-6 tablet:w-32 tablet:h-32 tablet:-mt-12 tablet:mb-2"
         }
       />

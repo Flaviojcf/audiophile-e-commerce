@@ -33,7 +33,7 @@ module.exports = {
       md: { max: "768px" },
       // => @media (max-width: 767px) { ... }
 
-      mobile: { max: "375px" },
+      mobile: { max: "425px" },
       // => @media (max-width: 639px) { ... }
     },
     fontFamily: {

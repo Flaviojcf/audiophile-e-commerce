@@ -1,8 +1,9 @@
 export function MarkHeadphone() {
   return (
-    <div className="w-full bg-black50 font-manrope px-10 pb-10 tablet:px-4  tablet:gap-0  tablet:bg-black">
+    <div className="w-full bg-black50 font-manrope px-10 pb-10 tablet:px-4  tablet:gap-0  tablet:bg-black50">
       <div className="flex gap-16 items-center justify-center text-white  tablet:text-center tablet:gap-0">
-        <div className="flex flex-col  gap-6  h-96 tablet:self-center px-4 tablet:absolute tablet:z-50 tablet:mt-36">
+        
+        <div className="flex flex-col  gap-6  h-96 tablet:self-center px-4 tablet:absolute tablet:z-40 tablet:mt-36">
           <p className="text-sm font-normal opacity-40 leading-5 tracking-medium ">
             NEW PRODUCT
           </p>
@@ -29,11 +30,11 @@ export function MarkHeadphone() {
           />
           <img
             src="audiophileTablet.png"
-            className="opacity-90 hidden tablet:flex mobile:hidden"
+            className="opacity-90 hidden  rounded-full tablet:flex mobile:hidden"
           />
           <img
             src="audiophileMobile.png"
-            className="opacity-90 hidden mobile:flex"
+            className="opacity-90 hidden rounded-full  mobile:flex"
           />
         </div>
       </div>

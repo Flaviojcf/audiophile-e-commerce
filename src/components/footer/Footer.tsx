@@ -1,4 +1,5 @@
 import { FacebookLogo, InstagramLogo, TwitterLogo } from "phosphor-react";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -14,16 +15,16 @@ export function Footer() {
         </div>
         <ul className="flex flex-wrap gap-8 text-white mobile:flex-col">
           <li className="cursor-pointer hover:text-orange300 transition duration-150 ease-in-out">
-            HOME
+            <Link to={"/"}>Home</Link>
           </li>
-          <li className="cursor-pointer hover:text-orange300 transition duration-150 ease-in-out">
-            HEADPHONES
+          <li className="cursor-pointer  hover:text-orange300 transition duration-150 ease-in-out">
+            <Link to={"/products/HEADPHONES"}>Headphones</Link>
           </li>
-          <li className="cursor-pointer hover:text-orange300 transition duration-150 ease-in-out">
-            SPEAKERS
+          <li className="cursor-pointer  hover:text-orange300 transition duration-150 ease-in-out">
+            <Link to={"/products/SPEAKERS"}>Speakers</Link>
           </li>
-          <li className="cursor-pointer hover:text-orange300 transition duration-150 ease-in-out">
-            EARPHONES
+          <li className="cursor-pointer  hover:text-orange300 transition duration-150 ease-in-out">
+            <Link to={"/products/EARPHONES"}>Earphones</Link>
           </li>
         </ul>
       </div>

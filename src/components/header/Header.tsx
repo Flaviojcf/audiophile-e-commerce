@@ -11,8 +11,6 @@ export function Header() {
   const { pathname } = useLocation();
   const { category } = useParams();
 
-
-
   return (
     <>
       <header
@@ -67,11 +65,7 @@ export function Header() {
           </div>
         </div>
       </header>
-      {pathname === "/" ? (
-        <MarkHeadphone />
-      ) : (
-        <HeaderComplement section={ String(category)} />
-      )}
+      
     </>
   );
 }

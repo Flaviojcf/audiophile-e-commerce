@@ -25,16 +25,16 @@ module.exports = {
     },
     screens: {
       desktop: { max: "1440px" },
-      // => @media (max-width: 1279px) { ... }
+
 
       tablet: { max: "1024px" },
-      // => @media (max-width: 1023px) { ... }
+    
 
       md: { max: "768px" },
-      // => @media (max-width: 767px) { ... }
+
 
       mobile: { max: "425px" },
-      // => @media (max-width: 639px) { ... }
+
     },
     fontFamily: {
       manrope: "manrope",

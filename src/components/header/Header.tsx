@@ -1,10 +1,9 @@
 import { ShoppingCart } from "phosphor-react";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
-
-
+import { HeaderComplement } from "../headerComplement/HeaderComplement";
 
 import { Link, useLocation, useParams } from "react-router-dom";
-
+import { HeaderHeadphone } from "../headerHeadphone/HeaderHeadphone";
 
 export function Header() {
   const { pathname } = useLocation();
@@ -24,18 +23,18 @@ export function Header() {
             </DropdownMenu.Trigger>
             <DropdownMenu.Content className="z-50">
               <ul className="bg-white flex flex-col p-8 rounded-md gap-4 text-black mt-4 ml-6 ">
-              <li className="cursor-pointer hover:text-orange300 transition duration-150 ease-in-out">
-              <Link to={"/"}>Home</Link>
-            </li>
-            <li className="cursor-pointer  hover:text-orange300 transition duration-150 ease-in-out">
-              <Link to={"/products/HEADPHONES"}>Headphones</Link>
-            </li>
-            <li className="cursor-pointer  hover:text-orange300 transition duration-150 ease-in-out">
-              <Link to={"/products/SPEAKERS"}>Speakers</Link>
-            </li>
-            <li className="cursor-pointer  hover:text-orange300 transition duration-150 ease-in-out">
-              <Link to={"/products/EARPHONES"}>Earphones</Link>
-            </li>
+                <li className="cursor-pointer hover:text-orange300 transition duration-150 ease-in-out">
+                  <Link to={"/"}>Home</Link>
+                </li>
+                <li className="cursor-pointer  hover:text-orange300 transition duration-150 ease-in-out">
+                  <Link to={"/products/HEADPHONES"}>Headphones</Link>
+                </li>
+                <li className="cursor-pointer  hover:text-orange300 transition duration-150 ease-in-out">
+                  <Link to={"/products/SPEAKERS"}>Speakers</Link>
+                </li>
+                <li className="cursor-pointer  hover:text-orange300 transition duration-150 ease-in-out">
+                  <Link to={"/products/EARPHONES"}>Earphones</Link>
+                </li>
               </ul>
             </DropdownMenu.Content>
           </DropdownMenu.Root>
@@ -64,7 +63,11 @@ export function Header() {
           </div>
         </div>
       </header>
-      
+      {pathname === "/" ? (
+        <HeaderHeadphone />
+      ) : (
+        <HeaderComplement section={String(category)} />
+      )}
     </>
   );
 }

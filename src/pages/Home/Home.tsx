@@ -1,10 +1,13 @@
+import { useEffect } from "react";
 import { Main } from "../../components/main/Main";
+import { ScrollToTop } from "../../utils/scroll-to-top";
 
+export function Home() {
+    ScrollToTop()
 
-export function Home(){
-    return(
-        <div >
-           <Main/>
-        </div>
-    )
+  return (
+    <div>
+      <Main />
+    </div>
+  );
 }

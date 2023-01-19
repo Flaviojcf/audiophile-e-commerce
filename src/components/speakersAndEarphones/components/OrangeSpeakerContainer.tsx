@@ -5,13 +5,13 @@ export function OrangeSpeakerContainer() {
       tablet:h-[45rem] tablet:self-center tablet:items-center  tablet:text-center tablet:gap-12 mobile:h-[37.5rem]  "
     >
       <div className="flex tablet:items-center tablet:justify-center tablet:w-48 tablet:h-60">
-        <img src="speakerOrange.png" className="mt-auto tablet:hidden" />
+        <img src="/speakerOrange.png" className="mt-auto tablet:hidden" />
         <img
-          src="speakerOrangeTablet.png"
+          src="/speakerOrangeTablet.png"
           className="mt-12 tablet:ml-0 hidden tablet:flex mobile:hidden"
         />
         <img
-          src="speakerOrangeMobile.png"
+          src="/speakerOrangeMobile.png"
           className="mt-12 tablet:ml-0 hidden mobile:flex w-48 h-60"
         />
       </div>

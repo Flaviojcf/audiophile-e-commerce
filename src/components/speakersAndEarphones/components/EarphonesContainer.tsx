@@ -3,7 +3,7 @@ export function EarphonesContainer() {
     <div className="flex gap-3 h-80 mobile:flex-col">
 
       <div className="w-1/2 h-80 mobile:w-full">
-        <img src="yx1Desktop.png" className="w-full  h-80 object-cover" />
+        <img src="/yx1Desktop.png" className="w-full  h-80 object-cover" />
       </div>
 
       <div className="flex flex-col justify-center bg-gray200 w-1/2 h-80  px-24 p-4 gap-8 tablet:px-2 mobile:w-full mobile:py-8 ">

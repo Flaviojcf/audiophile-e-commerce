@@ -13,13 +13,13 @@ export function GraySpeakerContainer() {
       </div>
 
       <div className="flex  w-[67rem]  ">
-        <img src="zx7Desktop.png" className="w-fit tablet:hidden" />
+        <img src="/zx7Desktop.png" className="w-fit tablet:hidden" />
         <img
-          src="zx7Tablet.png"
+          src="/zx7Tablet.png"
           className="hidden tablet:flex h-80 tablet:w-full mobile:hidden"
         />
         <img
-          src="zx7Mobile.png"
+          src="/zx7Mobile.png"
           className="hidden mobile:flex h-80 tablet:w-full"
         />
       </div>

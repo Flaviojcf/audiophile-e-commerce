@@ -11,21 +11,21 @@ export function Footer() {
 
       <div className="flex justify-between w-full tablet:flex-col tablet:gap-8 mobile:justify-center mobile:items-center mobile:text-center">
         <div>
-          <img src="audiophile.svg" className="cursor-pointer " />
+          <img src="/audiophile.svg" className="cursor-pointer " />
         </div>
         <ul className="flex flex-wrap gap-8 text-white mobile:flex-col">
-          <li className="cursor-pointer hover:text-orange300 transition duration-150 ease-in-out">
-            <Link to={"/"}>Home</Link>
-          </li>
-          <li className="cursor-pointer  hover:text-orange300 transition duration-150 ease-in-out">
-            <Link to={"/products/HEADPHONES"}>Headphones</Link>
-          </li>
-          <li className="cursor-pointer  hover:text-orange300 transition duration-150 ease-in-out">
-            <Link to={"/products/SPEAKERS"}>Speakers</Link>
-          </li>
-          <li className="cursor-pointer  hover:text-orange300 transition duration-150 ease-in-out">
-            <Link to={"/products/EARPHONES"}>Earphones</Link>
-          </li>
+        <li className="cursor-pointer hover:text-orange300 transition duration-150 ease-in-out">
+              <Link to={"/"}>Home</Link>
+            </li>
+            <li className="cursor-pointer  hover:text-orange300 transition duration-150 ease-in-out">
+              <Link to={"/products/HEADPHONES"}>Headphones</Link>
+            </li>
+            <li className="cursor-pointer  hover:text-orange300 transition duration-150 ease-in-out">
+              <Link to={"/products/SPEAKERS"}>Speakers</Link>
+            </li>
+            <li className="cursor-pointer  hover:text-orange300 transition duration-150 ease-in-out">
+              <Link to={"/products/EARPHONES"}>Earphones</Link>
+            </li>
         </ul>
       </div>
 

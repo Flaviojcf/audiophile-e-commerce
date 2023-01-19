@@ -19,7 +19,7 @@ export function Header() {
         <div className="flex justify-between items-center h-full py-4 pb-8 border-b-2 border-opacity-30  border-white  ">
           <DropdownMenu.Root>
             <DropdownMenu.Trigger className="hidden tablet:flex">
-              <img src="group.png" alt="" />
+              <img src="/group.png" alt="" />
             </DropdownMenu.Trigger>
             <DropdownMenu.Content className="z-50">
               <ul className="bg-white flex flex-col p-8 rounded-md gap-4 text-black mt-4 ml-6 ">
@@ -40,7 +40,7 @@ export function Header() {
           </DropdownMenu.Root>
 
           <div>
-            <img src="audiophile.svg" className="cursor-pointer" />
+            <img src="/audiophile.svg" className="cursor-pointer" />
           </div>
 
           <ul className="flex text-white gap-x-9  tablet:hidden ">

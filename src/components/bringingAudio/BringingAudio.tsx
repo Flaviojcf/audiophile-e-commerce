@@ -18,12 +18,12 @@ export function BringingAudio() {
       </div>
 
       <div className="w-1/2 tablet:w-full">
-        <img src="bringingDesktop.png" className="w-full tablet:hidden" />
+        <img src="/bringingDesktop.png" className="w-full tablet:hidden" />
         <img
-          src="bringingTablet.png"
+          src="/bringingTablet.png"
           className="w-full hidden tablet:flex mobile:hidden"
         />
-        <img src="bringingMobile.png" className="w-full hidden mobile:flex" />
+        <img src="/bringingMobile.png" className="w-full hidden mobile:flex" />
       </div>
     </div>
   );

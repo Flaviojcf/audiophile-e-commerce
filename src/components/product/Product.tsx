@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface ProductProps {
   image: string;
   name: string;
@@ -21,8 +23,8 @@ export function Product({ image, name }: ProductProps) {
         className="flex items-center justify-center gap-3 text-black opacity-50 tracking-[1px] leading-4 cursor-pointer 
         transition duration-150 ease-in-out hover:text-orange100 "
       >
-        SHOP
-        <img src="rightArrow.png" />
+      <Link to={`/products/${name}`}> SHOP </Link>
+        <img src="/rightArrow.png" />
       </p>
     </div>
   );

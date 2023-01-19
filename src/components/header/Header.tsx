@@ -1,7 +1,6 @@
 import { ShoppingCart } from "phosphor-react";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
-import { HeaderComplement } from "../headerComplement/HeaderComplement";
-import { MarkHeadphone } from "../markHeadphone/MarkHeadphone";
+
 
 
 import { Link, useLocation, useParams } from "react-router-dom";

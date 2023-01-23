@@ -1,5 +1,3 @@
-import { Input } from "./Input";
-
 export function Payment() {
   return (
     <div className="flex flex-col">
@@ -13,19 +11,34 @@ export function Payment() {
         <h1 className="font-bold text-xs leading-4">Payment Method</h1>
 
         <div className="flex flex-col gap-9 ">
-          <div className="flex items-center gap-3 border border-black 
-          w-[309px] h-[56px] p-4 rounded-lg border-opacity-40  tablet:w-full" >
-            <input type="radio" id="Money" name="payment" className="cursor-pointer"/>
-            <label htmlFor="payment" className="font-bold text-xs leading-4">
+          <div
+            className="flex items-center gap-3 border border-black 
+          w-[309px] h-[56px] p-4 rounded-lg border-opacity-40  tablet:w-full"
+          >
+            <input
+              type="radio"
+              id="Money"
+              name="payment"
+              className="cursor-pointer"
+              defaultChecked
+            />
+            <label htmlFor="payment" className="font-bold text-xs leading-4 ">
               e-Money
             </label>
           </div>
 
-          <div className="flex items-center gap-3 border border-black w-[309px] h-[56px] 
-          p-4 rounded-lg border-opacity-40  tablet:w-full">
-            <input type="radio" id="payment" name="payment" className="cursor-pointer" />
+          <div
+            className="flex items-center gap-3 border border-black w-[309px] h-[56px] 
+          p-4 rounded-lg border-opacity-40  tablet:w-full"
+          >
+            <input
+              type="radio"
+              id="payment"
+              name="payment"
+              className="cursor-pointer"
+            />
             <label htmlFor="Cash" className="font-bold text-xs leading-4">
-            Cash on Delivery
+              Cash on Delivery
             </label>
           </div>
         </div>

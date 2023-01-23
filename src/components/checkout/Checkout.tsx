@@ -2,10 +2,17 @@ import { CheckoutForm } from "./components/CheckoutForm";
 import { Summary } from "./components/Summary";
 
 export function Checkout() {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+  }
+
   return (
-    <div className="flex gap-8 mt-20 mb-20  tablet:flex-col">
+    <form
+      className="flex gap-8 mt-20 mb-20  tablet:flex-col"
+      onSubmit={(e) => handleSubmit(e)}
+    >
       <CheckoutForm />
       <Summary />
-    </div>
+    </form>
   );
 }

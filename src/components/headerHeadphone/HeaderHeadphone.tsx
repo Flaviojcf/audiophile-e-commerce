@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 export function HeaderHeadphone() {
   return (
     <div className="w-full bg-black50 font-manrope px-10 pb-10 tablet:px-4  tablet:gap-0  tablet:bg-black50">
-      
       <div className="flex gap-16 items-center justify-center text-white  tablet:text-center tablet:gap-0">
         <div className="flex flex-col  gap-6  h-96 tablet:self-center px-4 tablet:absolute tablet:z-40 tablet:mt-36">
           <p className="text-sm font-normal opacity-40 leading-5 tracking-medium ">
@@ -17,13 +16,12 @@ export function HeaderHeadphone() {
             made for the passionate music enthusiast.
           </p>
 
-          <Link to={"/products/HEADPHONES/xx99-mark-two-headphones"}>
-            <button
-              className="flex items-center justify-center w-40 h-12 text-sm leading-6 font-medium
+          <Link
+            to={"/products/HEADPHONES/xx99-mark-two-headphones"}
+            className="flex items-center justify-center w-40 h-12 text-sm leading-6 font-medium
              bg-orange300 tablet:self-center hover:bg-orange100  transition duration-150 ease-in-out"
-            >
-              See Product
-            </button>
+          >
+            <button>See Product</button>
           </Link>
         </div>
 

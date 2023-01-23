@@ -101,6 +101,11 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
     setProductInCart([]);
   }
 
+  function setText(){
+    
+  }
+
+
   useEffect(() => {
     localStorage.setItem("@ProductItems", JSON.stringify(productInCart));
   }, [productInCart]);

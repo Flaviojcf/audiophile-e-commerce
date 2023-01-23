@@ -11,11 +11,21 @@ export function Billing() {
 
       <div className="flex gap-4 flex-wrap ">
         <Input name="Name" id="Name" placeholder="Alexei Ward" type="text" />
-        <Input name="Email Address" id="Email" placeholder="alexei@mail.com" type="email"/>
+        <Input
+          name="Email Address"
+          id="Email"
+          placeholder="alexei@mail.com"
+          type="email"
+        />
       </div>
 
       <div className="mt-6">
-        <Input name="Phone Number" id="Number" placeholder="+1 202-555-0136" type="text"/>
+        <Input
+          name="Phone Number"
+          id="Number"
+          placeholder="+1 202-555-0136"
+          type="text"
+        />
       </div>
     </div>
   );

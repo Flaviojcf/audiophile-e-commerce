@@ -83,17 +83,14 @@ export function ProductDetails() {
 
   return (
     <div className="flex flex-col items-center justify-center mt-20 mb-20 gap-20 mobile:px-6">
-      <div className="flex">
-        <p className="opacity-50 hover:text-orange300 transition-colors cursor-pointer">
-          Go Back
-        </p>
-      </div>
+
       <ProductInfo
         image={productInfo?.image}
         description={productInfo?.description}
         name={productInfo?.name}
         isNewProduct={productInfo?.isNewProduct}
         price={productInfo?.price}
+        id = {productInfo?.id}
       />
       <ProductFeature
         feature={productInfo?.features}

@@ -81,15 +81,12 @@ export function ProductDetails() {
     fetchData();
   }, [details]);
 
-
   return (
     <div className="flex flex-col items-center justify-center mt-20 mb-20 gap-20 mobile:px-6">
       <div className="flex">
-        <Link to={-1}>
-          <p className="opacity-50 hover:text-orange300 transition-colors cursor-pointer">
-            Go Back
-          </p>
-        </Link>
+        <p className="opacity-50 hover:text-orange300 transition-colors cursor-pointer">
+          Go Back
+        </p>
       </div>
       <ProductInfo
         image={productInfo?.image}

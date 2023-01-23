@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function HeaderHeadphone() {
   return (
     <div className="w-full bg-black50 font-manrope px-10 pb-10 tablet:px-4  tablet:gap-0  tablet:bg-black50">
@@ -15,12 +17,14 @@ export function HeaderHeadphone() {
             made for the passionate music enthusiast.
           </p>
 
-          <button
-            className="flex items-center justify-center w-40 h-12 text-sm leading-6 font-medium 
-           bg-orange300 tablet:self-center hover:bg-orange100  transition duration-150 ease-in-out"
-          >
-            See Product
-          </button>
+          <Link to={"/products/HEADPHONES/xx99-mark-two-headphones"}>
+            <button
+              className="flex items-center justify-center w-40 h-12 text-sm leading-6 font-medium
+             bg-orange300 tablet:self-center hover:bg-orange100  transition duration-150 ease-in-out"
+            >
+              See Product
+            </button>
+          </Link>
         </div>
 
         <div className="text-white relative tablet:z-10 ">

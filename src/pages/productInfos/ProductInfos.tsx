@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { ProductDetails } from "../../components/productDetails/ProductDetails";
 import { Products } from "../../components/products/Products";
 
+
 export function ProductInfos() {
   useEffect(() => {
     window.scrollTo(0, 0);

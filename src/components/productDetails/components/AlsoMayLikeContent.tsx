@@ -16,6 +16,8 @@ export function AlsoMayLikeContent({ image, name, slug }: AlsoMayLikeContainerPr
 
   const {details} = useParams()
 
+
+
   function onChangePreSlug(slug:string){
     if(slug.includes('headphones')){
       setPreSlug('headphones')
@@ -30,7 +32,6 @@ export function AlsoMayLikeContent({ image, name, slug }: AlsoMayLikeContainerPr
   useEffect(()=>{
     onChangePreSlug(slug)
   },[details])
-
 
 
 

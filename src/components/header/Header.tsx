@@ -1,13 +1,21 @@
 import { ShoppingCart } from "phosphor-react";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
+import * as Dialog from "@radix-ui/react-dialog";
 import { HeaderComplement } from "../headerComplement/HeaderComplement";
 
 import { Link, useLocation, useParams } from "react-router-dom";
 import { HeaderHeadphone } from "../headerHeadphone/HeaderHeadphone";
+import { CartModal } from "../cartModal/CartModal";
+import { useState } from "react";
 
 export function Header() {
   const { pathname } = useLocation();
   const { category, details } = useParams();
+  const [open, setOpen] = useState(false);
+
+  function handleOpen() {
+    setOpen(state=>!state);
+  }
 
 
   return (
@@ -17,8 +25,13 @@ export function Header() {
           pathname === "/" ? "bg-black50" : "bg-black"
         } "justify-between items-center h-24 px-40 py-8  tablet:px-10 mobile:px-6  font-manrope tablet:bg-black"`}
       >
-        <div className= {!details ? "flex justify-between items-center h-full py-4 pb-8 border-b-2 border-opacity-30  border-white "
-         : "flex justify-between items-center h-full"}>
+        <div
+          className={
+            !details || pathname === "/checkout"
+              ? "flex justify-between items-center h-full"
+              : "flex justify-between items-center h-full py-4 pb-8 border-b-2 border-opacity-30  border-white "
+          }
+        >
           <DropdownMenu.Root>
             <DropdownMenu.Trigger className="hidden tablet:flex">
               <img src="/group.png" alt="" />
@@ -61,11 +74,18 @@ export function Header() {
           </ul>
 
           <div>
-            <ShoppingCart size={24} className="text-white cursor-pointer" />
+            <Dialog.Root open={open} onOpenChange={handleOpen}>
+              <Dialog.Trigger asChild>
+                <ShoppingCart size={24} className="text-white cursor-pointer" />
+              </Dialog.Trigger>
+              <CartModal handleOpen={handleOpen}/>
+            </Dialog.Root>
           </div>
         </div>
       </header>
-      {details ? <></> : pathname === "/" ? (
+      {details || pathname === "/checkout" ? (
+        <></>
+      ) : pathname === "/" ? (
         <HeaderHeadphone />
       ) : (
         <HeaderComplement section={String(category)} />

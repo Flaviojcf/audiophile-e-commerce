@@ -22,6 +22,7 @@ module.exports = {
       white100: "#f2f2f2",
 
       red: "#CD2C2C",
+      modalOverlay: "rgba(0, 0, 0, 0.75)"
     },
     screens: {
       desktop: { max: "1440px" },

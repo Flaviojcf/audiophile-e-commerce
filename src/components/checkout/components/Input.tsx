@@ -24,6 +24,7 @@ export function Input({
       <input
         required
         defaultValue={placeholder}
+        readOnly
         type={type}
         id={id}
         placeholder={placeholder}

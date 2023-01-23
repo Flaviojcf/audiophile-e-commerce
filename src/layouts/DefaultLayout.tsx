@@ -9,7 +9,7 @@ export function DefaultLayout(){
         <div>
             <Header/>
             <Outlet/>
-            <div className="flex items-center justify-center mb-48 px-40 tablet:px-10 mobile:px-6">
+            <div className="flex items-center justify-center mb-48 px-40 tablet:px-10 mobile:px-6 ">
             <BringingAudio/>
             </div>
             <Footer/>

@@ -10,6 +10,7 @@ interface databaseProps {
   isNewProduct: Boolean;
   name: string;
   description: string;
+  slug:string;
 }
 
 export function Product() {
@@ -27,6 +28,7 @@ export function Product() {
       description: product.description,
       name: product.name,
       isNewProduct: product.new,
+      slug: product.slug
     }));
 
     setProduct((state) =>
@@ -36,7 +38,7 @@ export function Product() {
     );
   }, [category]);
 
-  console.log(product);
+ 
 
   return (
     <div className="flex flex-col gap-40  px-40 items-center justify-center mt-32 mb-40 tablet:gap-[34rem] tablet:px-10 mobile:px-6 mobile:gap-96">
@@ -48,6 +50,7 @@ export function Product() {
           description={prod.description}
           image={prod.image}
           name={prod.name}
+          slug= {prod.slug}
         />
       ))}
 

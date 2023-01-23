@@ -7,7 +7,8 @@ import { HeaderHeadphone } from "../headerHeadphone/HeaderHeadphone";
 
 export function Header() {
   const { pathname } = useLocation();
-  const { category } = useParams();
+  const { category, details } = useParams();
+
 
   return (
     <>
@@ -16,7 +17,8 @@ export function Header() {
           pathname === "/" ? "bg-black50" : "bg-black"
         } "justify-between items-center h-24 px-40 py-8  tablet:px-10 mobile:px-6  font-manrope tablet:bg-black"`}
       >
-        <div className="flex justify-between items-center h-full py-4 pb-8 border-b-2 border-opacity-30  border-white  ">
+        <div className= {!details ? "flex justify-between items-center h-full py-4 pb-8 border-b-2 border-opacity-30  border-white "
+         : "flex justify-between items-center h-full"}>
           <DropdownMenu.Root>
             <DropdownMenu.Trigger className="hidden tablet:flex">
               <img src="/group.png" alt="" />
@@ -63,7 +65,7 @@ export function Header() {
           </div>
         </div>
       </header>
-      {pathname === "/" ? (
+      {details ? <></> : pathname === "/" ? (
         <HeaderHeadphone />
       ) : (
         <HeaderComplement section={String(category)} />

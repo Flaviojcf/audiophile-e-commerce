@@ -1,9 +1,12 @@
+import { Link, useParams } from "react-router-dom";
+
 interface ProductPerPage {
   image: string;
   isNewProduct: Boolean;
   name: string;
   description: string;
   isReversed?: boolean;
+  slug?:string;
 }
 
 export function ProductPerPage({
@@ -12,7 +15,11 @@ export function ProductPerPage({
   description,
   image,
   name,
+  slug
 }: ProductPerPage) {
+
+  const {category} = useParams()
+
   return (
     <div
       className={
@@ -38,12 +45,14 @@ export function ProductPerPage({
           {description}
         </p>
 
-        <button
-          className="flex items-center justify-center w-40 h-12 text-sm leading-6 font-medium text-white
-           bg-orange300 tablet:self-center hover:bg-orange100  transition duration-150 ease-in-out"
-        >
-          See Product
-        </button>
+        <Link to={`/products/${category}/${slug}`}>
+          <button
+            className="flex items-center justify-center w-40 h-12 text-sm leading-6 font-medium text-white
+             bg-orange300 tablet:self-center hover:bg-orange100  transition duration-150 ease-in-out"
+          >
+            See Product
+          </button>
+        </Link>
       </div>
     </div>
   );

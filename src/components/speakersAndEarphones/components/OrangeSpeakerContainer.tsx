@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function OrangeSpeakerContainer() {
   return (
     <div
@@ -25,12 +27,15 @@ export function OrangeSpeakerContainer() {
           Upgrade to premium speakers that are phenomenally built to deliver
           truly remarkable sound.
         </p>
-        <button
-          className="flex items-center justify-center bg-black hover:bg-gray300 transition duration-150 ease-in-out w-40 
+
+        <Link to={"/products/SPEAKERS/zx9-speaker"}>
+          <button
+            className="flex items-center justify-center bg-black hover:bg-gray300 transition duration-150 ease-in-out w-40 
           h-12 font-bold text-sm leading-4 tracking-[1px] text-white tablet:self-center"
-        >
-          See Product
-        </button>
+          >
+            See Product
+          </button>
+        </Link>
       </div>
     </div>
   );

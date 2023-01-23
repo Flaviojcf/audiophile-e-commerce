@@ -1,6 +1,6 @@
 export function BringingAudio() {
   return (
-    <div className="flex gap-32 max-w-[67rem] items-center tablet:flex-col-reverse tablet:gap-16 mobile:w-72 mobile:mt-36">
+    <div className="flex gap-32 max-w-[67rem] items-center tablet:flex-col-reverse tablet:gap-16 mobile:w-72 mobile:mt-36 ">
       <div className="flex flex-col w-1/2 gap-8 tablet:w-full tablet:text-center">
         <h1 className="text-black font-bold text-4xl tracking-[1.43px] leading-10 uppercase w-[27rem] tablet:self-center tablet:w-full">
           Bringing you the <strong className="text-orange300">best</strong>{" "}

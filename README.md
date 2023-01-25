@@ -9,7 +9,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/flaviojcf/audiophile-e-commerce">
-    <img src="/public/audiophile.gif" alt="Logo" width="460" height="460">
+    <img src="/public/audiophile.gif" alt="Logo">
   </a>
 
 <h3 align="center">audiophile-e-commerce</h3>
@@ -47,10 +47,10 @@
 ## Screenshots
 
 <div align="center">
-    <img src="/public/audiophile1.jpeg"  width="460" height="460">
-    <img src="/public/audiophile2.jpeg"  width="460" height="460">
-    <img src="/public/audiophile3.jpeg"  width="460" height="460">
-    <img src="/public/audiophile4.jpeg"  width="460" height="460">
+    <img src="/public/audiophile1.jpeg"  >
+    <img src="/public/audiophile2.jpeg"  >
+    <img src="/public/audiophile3.jpeg"  >
+    <img src="/public/audiophile4.jpeg"  >
 </div>
 
 

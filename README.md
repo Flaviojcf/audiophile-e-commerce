@@ -34,7 +34,6 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Pre-requisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -67,14 +66,9 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Pre-requisites
 
-This is an example of how to list things you need to use the software and how to install them.
 
 - npm
   ```sh

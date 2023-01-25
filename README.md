@@ -10,7 +10,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/flaviojcf/audiophile-e-commerce">
-  
+    <img src="/public/audiophile.gif" alt="Logo">
   </a>
 
 

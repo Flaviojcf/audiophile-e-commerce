@@ -1,4 +1,5 @@
 <a name="readme-top"></a>
+<h1 align="center">audiophile-e-commerce</h1>
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -12,7 +13,6 @@
     <img src="/public/audiophile.gif" alt="Logo">
   </a>
 
-<h3 align="center">audiophile-e-commerce</h3>
 
   <p align="center">
     This project is an audio equipment e-commerce. It includes features such as product catalog, shopping cart, and payment page.

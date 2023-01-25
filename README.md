@@ -53,7 +53,6 @@
 </div>
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
@@ -64,7 +63,6 @@
 - [![Typescript][Typescript.react]][Typescript-url]
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Pre-requisites
@@ -85,9 +83,6 @@
    ```sh
    npm install
    ```
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
